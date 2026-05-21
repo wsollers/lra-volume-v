@@ -1,2 +1,5 @@
 # lra-volume-v
-LRA Volume V (Overleaf-ready)
+
+**Volume V** — Overleaf-ready.
+
+Part of the [Learning Real Analysis](https://github.com/wsollers/Learning-Real-Analysis) project.
