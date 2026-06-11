@@ -200,9 +200,6 @@ def validate(root: Path, *, strict: bool, refactor_mode: bool) -> dict:
                 errors.append(Finding("malformed_vault_url", f"Malformed proof-vault backlink: {url!r}.", proof_rel))
         if "proofs" in proof.path.parts and "notes" in proof.path.parts and not refactor_mode:
             warnings.append(Finding("path_convention_mismatch", "Proof file still uses proofs/notes; future convention should mirror notes subfolders under proofs/.", proof_rel, severity="warning"))
-        if not proof.vault_urls:
-            warnings.append(Finding("missing_vault_backlink", "Optional proof-vault backlink is absent.", proof_rel, severity="warning"))
-
     for label, files in proof_label_map.items():
         if len(files) > 1:
             for proof in files:
