@@ -1,0 +1,11 @@
+subject: functional-analysis
+display_title: Functional Analysis
+volume: volume-v
+status: planned
+dependencies:
+  prior: ''
+  next: ''
+path: volume-v/book-functional-analysis/functional-analysis
+book: book-functional-analysis
+environments: []
+proof_files: []

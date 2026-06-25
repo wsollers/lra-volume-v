@@ -1,0 +1,62 @@
+% =========================================================
+% volume-v-measure-theory-main.tex --- Standalone book root
+% Volume V: Modern Analysis / Measure Theory
+% =========================================================
+\documentclass[12pt, a4paper]{report}
+\input{common/volume-preamble}
+
+\begin{document}
+\ExplSyntaxOff
+\renewcommand{\familydefault}{\rmdefault}
+
+\pagenumbering{roman}
+\begin{titlepage}
+\centering
+\vspace*{3.5cm}
+
+{\Large\scshape Volume V\par}
+\vspace{0.35cm}
+{\large Modern Analysis\par}
+
+\vspace{1.4cm}
+
+{\Huge\bfseries Measure Theory\par}
+
+\vspace{0.6cm}
+{\large\itshape Self-Study Notes\par}
+
+\vfill
+
+{\large William Sollers\par}
+\vspace{0.35cm}
+{\large \today\par}
+
+\vfill
+
+{\large\scshape From Cantor to Ito\par}
+\end{titlepage}
+
+\clearpage
+\thispagestyle{plain}
+\chapter*{Front Matter}
+\noindent\textbf{Series.} From Cantor to Ito\\[0.5em]
+\textbf{Volume.} Volume V: Modern Analysis\\[0.5em]
+\textbf{Book.} Measure Theory
+
+\clearpage
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+\input{volume-v/book-measure/index}
+
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{%
+  bibliography/volume-v-topology-geometry%
+}
+
+\printindex[tech]
+\printindex[dep]
+
+\end{document}

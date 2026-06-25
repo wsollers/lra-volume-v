@@ -1,0 +1,11 @@
+subject: measure-theory
+display_title: Measure Theory
+volume: volume-v
+status: planned
+dependencies:
+  prior: ''
+  next: ''
+path: volume-v/book-measure/measure-theory
+book: book-measure
+environments: []
+proof_files: []

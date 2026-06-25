@@ -1,0 +1,11 @@
+subject: complex-analysis
+display_title: Complex Analysis
+volume: volume-v
+status: planned
+dependencies:
+  prior: ''
+  next: ''
+path: volume-v/book-complex-analysis/complex-analysis
+book: book-complex-analysis
+environments: []
+proof_files: []
