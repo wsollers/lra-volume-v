@@ -1,0 +1,38 @@
+% =========================================================
+% volume-v.tex --- Standalone root for Volume V
+% Volume V: Modern Analysis
+%
+% Build (local): latexmk -lualatex volume-v.tex
+% Build (Overleaf): Menu $\to$ Main Document $\to$ volume-v.tex
+% =========================================================
+\documentclass[12pt, a4paper]{report}
+\input{common/volume-preamble}
+
+\begin{document}
+\ExplSyntaxOff
+\renewcommand{\familydefault}{\rmdefault}
+
+\pagenumbering{roman}
+\input{volume-v/gauss-quote}
+\input{volume-v/volume-v-title}
+
+\clearpage
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+\input{volume-v/index}
+
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{%
+  bibliography/volume-v-complex-analysis,%
+  bibliography/volume-v-functional-analysis,%
+  bibliography/volume-v-measure-theory,%
+  bibliography/volume-v-probability%
+}
+
+\printindex[tech]
+\printindex[dep]
+
+\end{document}
