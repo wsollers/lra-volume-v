@@ -1,5 +1,5 @@
 % =========================================================
-% volume-v.tex --- Standalone root for Volume V
+% volume-v.tex --- Standalone volume root
 % Volume V: Modern Analysis
 %
 % Build (local): latexmk -lualatex volume-v.tex
@@ -13,10 +13,10 @@
 \renewcommand{\familydefault}{\rmdefault}
 
 \pagenumbering{roman}
-\input{volume-v/gauss-quote}
-\input{volume-v/volume-v-title}
+\input{volume-v/frontmatter}
+\LRAFrontMatterPage{From Cantor to Ito}{Modern Analysis}{}{Stefan Banach}{1892-1945}{images/banach.png}
+\input{common/dedication}
 
-\clearpage
 \tableofcontents
 \clearpage
 \pagenumbering{arabic}
@@ -27,10 +27,10 @@
 \clearpage
 \bibliographystyle{plainnat}
 \bibliography{%
-  bibliography/volume-v-complex-analysis,%
-  bibliography/volume-v-functional-analysis,%
   bibliography/volume-v-measure-theory,%
-  bibliography/volume-v-probability%
+  bibliography/volume-v-probability,%
+  bibliography/volume-v-functional-analysis,%
+  bibliography/volume-v-complex-analysis
 }
 
 \printindex[tech]
